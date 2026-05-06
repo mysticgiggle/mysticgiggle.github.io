@@ -1,0 +1,142 @@
+:root {
+  --motion-primary: #80F41A;
+  --motion-primary-menu: #68C516;
+  --motion-primary-dark: #7DD100;
+
+  --bg-light: #ffffff;
+  --bg-dark: #121212;
+  --text-light: #111;
+  --text-dark: #eaeaea;
+}
+
+/* =========================
+   GLOBAL
+========================= */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-light);
+  color: var(--text-light);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* =========================
+   NAVBAR BASE (light-mode)
+   (works with your HTML)
+========================= */
+.menu-bar {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: var(--motion-primary);
+}
+
+.menu-bar_ul {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.menu-bar_li,
+.menu-bar_li_left {
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar_a {
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.menu-bar_a:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+/* =========================
+   DROPDOWN
+========================= */
+.menu-bar_li_left {
+  position: relative;
+}
+
+.menu-bar_languages-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #222;
+  padding: 10px;
+  display: none;
+  min-width: 160px;
+}
+
+.menu-bar_li_left:hover .menu-bar_languages-dropdown {
+  display: block;
+}
+
+.menu-bar_language-option {
+  padding: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-bar_language-option:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* =========================
+   SEARCH
+========================= */
+.searchbar-main-div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.searchbar-searchInput {
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+}
+
+/* =========================
+   LAYOUT HELPERS
+========================= */
+.container-fluid {
+  padding: 10px;
+}
+
+.bg-jumbotron {
+  padding: 40px;
+  text-align: center;
+  background: linear-gradient(90deg, #6a5acd, #00bcd4);
+  color: white;
+}
+
+.bg-container {
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+/* =========================
+   DARK MODE SUPPORT
+========================= */
+body.dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+body.dark .bg-container {
+  background: #1e1e1e;
+}
+
+body.dark .menu-bar {
+  filter: brightness(0.85);
+}
