@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MysticGiggle's Site!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MysticGiggle's Site!</title>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-  <link rel="stylesheet" href="https://gaiawindwave90.github.io/css/bounce.css">
-  <link rel="stylesheet" href="https://gaiawindwave90.github.io/css/main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/9159e3acb3.js" crossorigin="anonymous"></script>
 
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <script defer src="https://kit.fontawesome.com/9159e3acb3.js"></script>
-  <script defer src="https://gaiawindwave90.github.io/js/main.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+<link rel="stylesheet" href="https://gaiawindwave90.github.io/css/bounce.css">
+<link rel="stylesheet" href="https://gaiawindwave90.github.io/css/main.css">
 </head>
 
 <body>
@@ -23,23 +24,17 @@
 
     <ul class="navbar-nav align-items-center">
 
+      <!-- LOGO -->
       <li class="nav-item">
         <a class="nav-link imageIcon" href="https://mysticgiggle.github.io/">
           <img src="https://raw.githubusercontent.com/mysticgiggle/mysticgiggle.github.io/refs/heads/main/penguinmod.png" width="70">
         </a>
       </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="/memes.html">Memes</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="/scratch.html">Scratch Projects</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="/signup.html">Sign Up</a>
-      </li>
+      <!-- LINKS -->
+      <li class="nav-item"><a class="nav-link" href="/memes.html">Memes</a></li>
+      <li class="nav-item"><a class="nav-link" href="/scratch.html">Scratch Projects</a></li>
+      <li class="nav-item"><a class="nav-link" href="/signup.html">Sign Up</a></li>
 
       <li class="nav-item">
         <a class="nav-link" href="https://github.com/mysticgiggle/mysticgiggle.github.io">
@@ -47,7 +42,7 @@
         </a>
       </li>
 
-      <!-- SEARCH BAR -->
+      <!-- SEARCH (SAFE ADDITION) -->
       <li class="nav-item">
         <div class="searchbar-main-div">
 
@@ -64,10 +59,12 @@
         </div>
       </li>
 
-      <!-- THEME SWITCH -->
-      <li class="nav-item ms-2">
-        <button class="button ca-themeSwitcher" id="themeSwitcher">
-          <img id="themeIcon" src="https://gaiamod-main.github.io/sun.svg" width="24">
+      <!-- THEME BUTTON -->
+      <li class="nav-item">
+        <button class="button ca-themeSwitcher svelte-1e8yjh4"
+                style="padding:0.5rem"
+                id="themeSwitcher">
+          <img src="https://gaiamod-main.github.io/sun.svg" id="themeIcon" width="24">
         </button>
       </li>
 
@@ -76,55 +73,75 @@
   </div>
 </nav>
 
-<header class="p-5 bg-jumbotron text-center">
+<div class="p-5 bg-jumbotron text-center">
 
-  <div style="margin-left: 8rem;" class="mt-5">
+<h2>An archive of stuff made by me, with lots of special capabilities!</h2>
 
-    <h1>Block-based coding with tons of capabilities</h1>
+<div style="margin-left: 8rem;" class="svelte-1xejgu0">
 
-    <h1>
-      Built off of
-      <a href="https://scratch.mit.edu" style="color:orange;">Scratch</a>,
-      <a href="https://turbowarp.org" style="color:red;">TurboWarp</a>, and
-      <a href="https://penguinmod.com" style="color:cyan;">PenguinMod</a>
-    </h1>
+  <h1>Block-based coding with tons of capabilities</h1>
 
-    <a href="/editor.html">
-      <button>
-        <img src="https://gaiamod-main.github.io/GaiaMod-Home/tryit.svg" width="32">
-        Try it out
-      </button>
-    </a>
+  <h1>
+    Built off of
+    <a href="https://scratch.mit.edu" style="color:orange;">Scratch</a>,
+    <a href="https://turbowarp.org" style="color:red;">TurboWarp</a>, and
+    <a href="https://penguinmod.com" style="color:cyan;">PenguinMod</a>
+  </h1>
 
-    <video width="426" height="240" autoplay loop muted playsinline>
-      <source src="https://gaiamod-main.github.io/GaiaMod-Home/showcase.mp4">
-    </video>
+  <a href="/editor.html">
+    <button>
+      <img src="https://gaiamod-main.github.io/GaiaMod-Home/tryit.svg" width="32">
+      Try it out
+    </button>
+  </a>
+
+  <video width="426" height="240" autoplay loop muted>
+    <source src="https://gaiamod-main.github.io/GaiaMod-Home/showcase.mp4">
+  </video>
+
+</div>
+
+</div>
+
+<div class="container-fluid bg-section text-center">
+  <a class="btn btn-gaia" href="https://github.com/mysticgiggle/mysticgiggle.github.io">Source Code</a>
+</div>
+
+<div class="container-fluid">
+<center>
+<img src="https://uploads.scratch.mit.edu/get_image/user/170305544_60x60.png" style="width:15%">
+<p><em>Note: Please don't mention this website on Scratch.</em></p>
+</center>
+
+<div class="row content">
+
+  <div class="col-sm-2 sidenav text-center">
+    <h4>Date</h4>
+    <p><span id="currentDate"></span></p>
+    <p><span id="time"></span></p>
+  </div>
+
+  <div class="col-sm-8 border bg-container">
+
+    <h2>What's New?</h2>
+
+    <h3>A special surprise message from Ship Guy...</h3>
+
+    <img src="https://gaiawindwave90.github.io/img/art/colored.png" class="img-fluid">
 
   </div>
 
-</header>
+</div>
 
-<section class="text-center py-3">
-  <a href="https://github.com/mysticgiggle/mysticgiggle.github.io">Source Code</a>
-</section>
+</div>
 
-<main class="container-fluid text-center">
-
-  <img src="https://uploads.scratch.mit.edu/get_image/user/170305544_60x60.png" width="120">
-
-  <h2>What's New?</h2>
-
-  <h3>A special surprise message from Ship Guy...</h3>
-
-  <img src="https://gaiawindwave90.github.io/img/art/colored.png" class="img-fluid">
-
-</main>
+<footer class="container-fluid small text-center">
+</footer>
 
 <script>
-document.getElementById("searchbar-searchIcon").addEventListener("click", () => {
+document.getElementById("searchbar-searchIcon").addEventListener("click", function () {
   const q = document.getElementById("searchbar-searchInput").value;
   if (!q) return;
-
   window.location.href = "https://scratch.mit.edu/search/projects?q=" + encodeURIComponent(q);
 });
 </script>
